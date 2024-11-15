@@ -11,9 +11,9 @@
 #include <thread>
 #include <future>
 
-const size_t MEMORY_LIMIT = 16 * 1024; // 16KB的内存限制
+const size_t MEMORY_LIMIT = 16 * 1024 * 1024; // 16KB的内存限制
 const size_t BLOCK_SIZE = MEMORY_LIMIT / sizeof(int64_t); // 每个块的大小，以int64_t为单位
-const size_t CACHE_SIZE = 8 * 1024; // 8KB的缓存大小
+const size_t CACHE_SIZE = 8 * 1024 * 1024; // 8KB的缓存大小
 const size_t MERGE_BATCH_SIZE = 8; // 每次合并的文件数
 
 // 缓存类
