@@ -8,7 +8,7 @@ import time
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # 定义常量作为宏
-NUM_BIN_FILES = 10  # .bin文件的数量
+NUM_BIN_FILES = 100  # .bin文件的数量
 MIN_FILE_SIZE = 1 * 8192  # 最小文件大小（64位整数个数），即1KB
 MAX_FILE_SIZE =  1024 * 8192  # 最大文件大小（64位整数个数），即1024KB
 BATCH_SIZE = 1024  # 批量写入每次的64位整数数量，减少写操作次数
