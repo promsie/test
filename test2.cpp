@@ -10,8 +10,8 @@
     #include <string>
     #include <cstring>  // 添加这个头文件
 
-    #define CACHE_SIZE 1024
-    #define BLOCK_SIZE 1000
+    #define CACHE_SIZE 1024 * 1024
+    #define BLOCK_SIZE 1000 * 1024
     #define MERGE_BATCH_SIZE 2
 
     class Buffer {
